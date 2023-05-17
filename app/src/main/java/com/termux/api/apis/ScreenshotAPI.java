@@ -5,6 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.projection.MediaProjectionManager;
 
+import com.termux.api.util.TermuxApiPermissionActivity;
+
+
+
 import com.termux.api.util.ResultReturner;
 import com.termux.api.util.TermuxApiPermissionActivity;
 
@@ -29,13 +33,13 @@ public class ScreenshotAPI {
                         screenshotIntent.putExtra(ScreenshotService.EXTRA_OUTPUT_PATH, outputPath);
                         context.startService(screenshotIntent);
 
-                        out.write(("Screenshot saved to: " + outputPath).getBytes());
+                        out.write("Screenshot saved to: " + outputPath);
                     } else {
-                        out.write("Error: Failed to capture screenshot.".getBytes());
+                        out.write("Error: Failed to capture screenshot.");
                     }
                 });
             } catch (Exception e) {
-                out.write(("Error: " + e.getMessage()).getBytes());
+                out.write("Error: " + e.getMessage());
                 e.printStackTrace();
             }
         });
