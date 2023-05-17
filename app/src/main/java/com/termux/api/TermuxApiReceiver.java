@@ -194,7 +194,7 @@ public class TermuxApiReceiver extends BroadcastReceiver {
                 SAFAPI.onReceive(this, context, intent);
                 break;
             case "screenshot":
-                ScreenshotAPI.onReceive(this, context, inten);
+                ScreenshotAPI.onReceive(this, context, intent);
                 break;
             case "Sensor":
                 SensorAPI.onReceive(context, intent);
