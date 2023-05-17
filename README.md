@@ -3,7 +3,8 @@
 [![Build status](https://github.com/termux/termux-api/workflows/Build/badge.svg)](https://github.com/termux/termux-api/actions)
 [![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
 
-Edit: add termux-screenshot api it needs to configure .termux/Tasks/termux-screenshot file to ise this command
+Edit: add termux-screenshot api it needs to configure .termux/Tasks/termux-screenshot file to use this command
+
 This is an app exposing Android API to command line usage and scripts or programs.
 
 When developing or packaging, note that this app needs to be signed with the same
